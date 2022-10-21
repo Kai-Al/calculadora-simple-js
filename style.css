@@ -1,0 +1,105 @@
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  align-items: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  background: linear-gradient(320deg, #eb92be, #ffef78, #63c9b4);
+  color: #333;
+  height: 100%;
+  display: flex;
+  font-display: swap;
+  justify-content: center;
+}
+
+.wrapper {
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 16px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 0.2);
+  flex-basis: 400px;
+  margin: 0 1rem;
+  height: auto;
+  max-height: 100%;
+  overflow: auto;
+}
+
+.screen {
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(255, 255, 255, 0.75);
+    border-radius: 16px;
+    box-shadow: 0 4 30px rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.02);
+    color: rgba(0, 0, 0, 0.2);
+    font-size: 30px;
+   overflow: auto;
+    margin: 0 1rem;
+    text-align: right;
+    width: 100%;
+}
+
+.button-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+}
+
+.button {
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(0, 0, 0, 0.02);
+    border-radius: 16px;
+    box-shadow: 0 4 30px rgba(0, 0, 0, 0.2);
+    color: #333;
+    flex-basis: 20%;
+    font-family: inherit;
+    cursor: pointer;
+    font-size: 1.6rem;
+    height: 65px;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    text-align: center;
+}
+
+.button:last-child{
+    color: #fff;
+    background-color: #d72889;
+}
+
+.button:hover {
+    background: rgba(0, 0, 0, 0.9);
+    color: #fff;
+}
+
+.button:active {
+    background: #ffef78;
+    color: #333;
+}
+
+.double{
+    flex-basis: 47%;
+}
+
+.triple{
+    flex-basis: 74%;
+}
